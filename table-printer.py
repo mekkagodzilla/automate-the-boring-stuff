@@ -28,7 +28,7 @@ def printTable(table):
                 maxLength = len(word)
         colWidth[i] = maxLength
 
-    for i in range(4):
+    for i in range(len(table[0])):
         print(table[0][i].rjust(colWidth[0]), table[1][i].rjust(
             colWidth[1]), table[2][i].rjust(colWidth[2]))
 
