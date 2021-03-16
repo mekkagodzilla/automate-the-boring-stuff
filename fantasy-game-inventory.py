@@ -18,7 +18,10 @@ def displayInventory(inventory):
     totalItems = 0
     print("Inventory:")
     for key, value in inventory.items():
-        print(value, key)
+        if value > 1:
+            print(value, key + "s")
+        else:
+            print(value, key)
         totalItems += value
     print("\nTotal number of items:", totalItems)
 
